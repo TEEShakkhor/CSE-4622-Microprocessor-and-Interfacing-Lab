@@ -1,0 +1,15 @@
+ORG 0100h
+.DATA
+SUM DW ?
+.CODE
+MAIN PROC
+    MOV AX, 30
+    ADD AX, 15
+    MOV BX, 575
+    SUB BX, 225
+    MUL BX
+    ADD AX, 210
+    MOV SUM, AX
+MAIN ENDP
+END MAIN
+Ret
